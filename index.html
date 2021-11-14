@@ -27,7 +27,7 @@
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#home" class="nav__link">Home</a>
+            <a href="#home" class="nav__link active-link">Home</a>
           </li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
@@ -49,8 +49,12 @@
 
       </div>
 
-      <div class="nav__toggle" id="nav-toggle">
-        <i class="ri-menu-line"></i>
+      <div class="nav__btns">
+        <i class="ri-moon-line change__theme" id="theme-button"></i>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
       </div>
 
     </nav>
@@ -393,15 +397,138 @@
         </div>
       </div>
     </section>
-    <!-- ============ HOME ============ -->
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact container" id="contact">
+      <div class="contact__container grid">
+        <div class="contact__box">
+          <h2 class="section__title">
+            Reach out to us today <br> via any of the given <br> information
+          </h2>
+
+          <div class="contact__data">
+            <div class="contact__info">
+              <h3 class="contact__subtitle">Call us for instant support</h3>
+  
+              <span class="contact__description">
+                <i class="ri-phone-line contact__icon"></i>
+                +755 555 555
+              </span>
+            </div>
+  
+            <div class="contact__info">
+              <h3 class="contact__subtitle">Write us by mail</h3>
+  
+              <span class="contact__description">
+                <i class="ri-mail-line"></i>
+                user@email.com
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <form action="#" class="contact__form">
+          <div class="contact__inputs">
+            <div class="contact__content">
+              <input type="email" class="contact__input" placeholder=" ">
+              <label for="" class="contact__label">Email</label>
+            </div>
+
+            <div class="contact__content">
+              <input type="text" class="contact__input" placeholder=" ">
+              <label for="" class="contact__label">Subject</label>
+            </div>
+
+            <div class="contact__content contact__area">
+              <textarea name="message" class="contact__input" placeholder=" "></textarea>
+              <label for="" class="contact__label">Message</label>
+            </div>
+          </div>
+
+          <button class="button button--flex">
+            Send Message
+            <i class="ri-arrow-right-up-line button__icon"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <!-- ============ FOOTER ============ -->
   <footer class="footer section">
+    <div class="footer__container container grid">
+      <div class="footer__content">
+        <a href="#" class="footer__logo">
+          <i class="ri-leaf-line footer__logo-icon"></i>
+          Plantex
+        </a>
 
+        <h3 class="footer__title">
+          Subscribe to our newsletter <br> to stay update
+        </h3>
+
+        <div class="footer__subscribe">
+          <input type="email" class="footer__input" placeholder="Enter your email">
+
+          <button class="button button--flex footer__button">
+            Subscribe
+            <i class="ri-arrow-right-up-line"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Our Address</h3>
+
+        <ul class="footer__data">
+          <li class="footer__inforamtion">1234 - Peru</li>
+          <li class="footer__inforamtion">La Libertad - 43210</li>
+          <li class="footer__inforamtion">123-456-789</li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Contact Us</h3>
+
+        <ul class="footer__data">
+          <li class="footer__inforamtion">+999 888 777</li>
+          
+          <div class="footer__social">
+            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+              <i class="ri-twitter-fill"></i>
+            </a>  
+          </div>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">We accept all credit cards</h3>
+
+        <div class="footer__cards">
+          <img src="assets/img/card1.png" alt="" class="footer__card">
+          <img src="assets/img/card2.png" alt="" class="footer__card">
+          <img src="assets/img/card3.png" alt="" class="footer__card">
+          <img src="assets/img/card4.png" alt="" class="footer__card">
+        </div>
+      </div>
+
+      <p class="footer__copy">
+        &#169; Beck. All rigths reserved
+      </p>
+    </div>
   </footer>
   
   <!-- ============ SCROLL UP ============ -->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-fill scrollup__icon"></i>
+  </a>
 
   <!-- ============ REVEAL JS ============ -->
 
